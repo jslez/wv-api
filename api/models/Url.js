@@ -10,7 +10,10 @@ module.exports = {
   attributes: {
 
   	// id: { type: 'string'},
-  	url: { type: 'string'}
+  	url: { type: 'string'},
+  	questionID: { type: 'string'},
+  	questionTitle: { type: 'string'},
+  	questionText: { type: 'string'}
   	
   }
 };
