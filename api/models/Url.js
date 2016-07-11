@@ -13,7 +13,8 @@ module.exports = {
   	url: { type: 'string'},
   	questionID: { type: 'string'},
   	questionTitle: { type: 'string'},
-  	questionText: { type: 'string'}
+  	questionText: { type: 'string'},
+	  views:{type: 'integer', defaultsTo : 0}
   	
   }
 };

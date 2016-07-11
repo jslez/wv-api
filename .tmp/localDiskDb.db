@@ -1,35 +1,103 @@
 {
   "data": {
-    "url": [
-      {
-        "url": "http://www.entrepreneur.com/article/245948",
-        "createdAt": "2015-05-23T10:12:49.424Z",
-        "updatedAt": "2015-05-23T10:12:49.424Z",
-        "id": 1
-      },
-      {
-        "url": "http://www.entrepreneur.com/article/246479",
-        "createdAt": "2015-05-23T10:13:35.093Z",
-        "updatedAt": "2015-05-23T10:13:35.093Z",
-        "id": 2
-      }
-    ],
-    "urlfeedback": [],
-    "worldviewapi": [],
     "question": [
       {
-        "text": "Are you sure this was a bheegi raat",
-        "title": "Bheegi Raatain Man",
-        "createdAt": "2015-05-23T11:02:47.889Z",
-        "updatedAt": "2015-05-23T11:02:47.889Z",
-        "id": 1
+        "text": "fdsfdsf",
+        "title": "dsfds",
+        "createdAt": "2016-07-09T08:06:47.885Z",
+        "updatedAt": "2016-07-09T08:06:47.885Z",
+        "id": 3
       }
-    ]
+    ],
+    "url": [
+      {
+        "questionID": "3",
+        "questionText": "fdsfdsf",
+        "questionTitle": "dsfds",
+        "url": "http://net.hr",
+        "createdAt": "2016-07-09T08:06:58.853Z",
+        "updatedAt": "2016-07-09T15:43:55.870Z",
+        "id": 4,
+        "count": 1,
+        "views": 4
+      },
+      {
+        "questionID": "3",
+        "questionText": "fdsfdsf",
+        "questionTitle": "dsfds",
+        "url": "http://net.hr",
+        "createdAt": "2016-07-09T08:09:54.195Z",
+        "updatedAt": "2016-07-09T08:09:54.195Z",
+        "id": 5
+      },
+      {
+        "questionID": "3",
+        "questionText": "fdsfdsf",
+        "questionTitle": "dsfds",
+        "url": "http://www.slovenijales.si/",
+        "views": 1,
+        "createdAt": "2016-07-09T15:47:54.260Z",
+        "updatedAt": "2016-07-09T15:55:22.217Z",
+        "id": 6
+      }
+    ],
+    "urlfeedback": [
+      {
+        "feedbackAfter": "Not Available",
+        "feedbackBefore": "No Answer",
+        "urlID": "4",
+        "createdAt": "2016-07-09T08:07:15.766Z",
+        "updatedAt": "2016-07-09T08:07:15.766Z",
+        "id": 2
+      },
+      {
+        "feedbackAfter": "Not Available",
+        "feedbackBefore": "No Answer",
+        "urlID": "6",
+        "createdAt": "2016-07-09T15:55:20.030Z",
+        "updatedAt": "2016-07-09T15:55:20.030Z",
+        "id": 3
+      }
+    ],
+    "worldviewapi": []
   },
   "schema": {
+    "question": {
+      "title": {
+        "type": "string"
+      },
+      "text": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
     "url": {
       "url": {
         "type": "string"
+      },
+      "questionID": {
+        "type": "string"
+      },
+      "questionTitle": {
+        "type": "string"
+      },
+      "questionText": {
+        "type": "string"
+      },
+      "views": {
+        "type": "integer",
+        "defaultsTo": 0
       },
       "id": {
         "type": "integer",
@@ -80,36 +148,18 @@
       "updatedAt": {
         "type": "datetime"
       }
-    },
-    "question": {
-      "title": {
-        "type": "string"
-      },
-      "text": {
-        "type": "string"
-      },
-      "id": {
-        "type": "integer",
-        "autoIncrement": true,
-        "primaryKey": true,
-        "unique": true
-      },
-      "createdAt": {
-        "type": "datetime"
-      },
-      "updatedAt": {
-        "type": "datetime"
-      }
     }
   },
   "counters": {
     "url": {
-      "id": 2
+      "id": 6
     },
-    "urlfeedback": {},
+    "urlfeedback": {
+      "id": 3
+    },
     "worldviewapi": {},
     "question": {
-      "id": 1
+      "id": 3
     }
   }
 }
